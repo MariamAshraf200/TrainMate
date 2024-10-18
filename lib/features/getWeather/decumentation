@@ -35,6 +35,7 @@ Here's a structured documentation for your **Weather Feature** using the Clean A
   - **getWeather Function:**
     - Takes latitude and longitude and returns a `Weather` entity.
 
+
 ### Presentation layer
 - **bloc**
   - bloc
@@ -43,6 +44,7 @@ Here's a structured documentation for your **Weather Feature** using the Clean A
      user action for feature like 'sign up , login'
   - state
       handle state of feature like success , failure , or loading
+
 
 UI
  **Current Weather Display**

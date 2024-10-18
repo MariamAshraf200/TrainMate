@@ -1,5 +1,4 @@
 import 'package:check_weather/features/getWeather/data/remote_data.dart';
-
 import '../domain/entit.dart';
 import '../domain/repo.dart';
 import 'model.dart';
@@ -14,4 +13,5 @@ class WeatherRepositoryImpl implements WeatherRepository {
     final weatherData = await remoteDataSource.getWeatherData(latitude, longitude);
     return WeatherModel.fromJson(weatherData);
   }
+
 }

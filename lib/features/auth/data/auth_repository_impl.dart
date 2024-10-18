@@ -5,9 +5,10 @@ import '../domain/entity.dart';
 
 class AuthRepositoryImpl implements AuthRepository {
   final firebase_auth.FirebaseAuth firebaseAuth;
-  
+  final SharedPreferences sharedPreferences;
 
-  AuthRepositoryImpl(this.firebaseAuth);
+  AuthRepositoryImpl({required this.firebaseAuth, required this.sharedPreferences});
+
 
   @override
   Future<User?> login(String email, String password) async {
@@ -51,9 +52,8 @@ class AuthRepositoryImpl implements AuthRepository {
   @override
   Future<void> logout() async {
     await firebaseAuth.signOut();
-    SharedPreferences prefs = await SharedPreferences.getInstance();
-    await prefs.remove('email');
-    await prefs.remove('password');
+    await sharedPreferences.clear();
+
   }
 
   @override

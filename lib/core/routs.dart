@@ -9,7 +9,7 @@ class routes{
     return{
       '/login': (context) => LoginPage(),
       '/signup': (context) => SignUpPage(),
-      '/location': (context) => const WeatherScreen(),
+      '/location': (context) => const WeatherForecastScreen(),
   };
 }
 }

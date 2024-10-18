@@ -1,0 +1,11 @@
+##### ai model detect player can train or not depended on list of in
+
+### Weather Mapper file in domain layer list has data from entity
+       and make condition for filtering data that send to model as list of integer
+
+#### Api services  in core => helper connect to flask app that link ai model
+        has function get prediction that take list int and connect python flask app
+
+###### ui
+        _buildNavigateToPredictionButton => take get prediction in api service
+        and by data that detect from day in api weather depended on weather mapper and model detect prediction
