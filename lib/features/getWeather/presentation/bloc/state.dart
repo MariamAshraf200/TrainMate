@@ -1,3 +1,4 @@
+// lib/features/getWeather/presentation/bloc/weather_state.dart
 
 import '../../domain/entit.dart';
 
@@ -10,7 +11,7 @@ class WeatherLoading extends WeatherState {}
 class WeatherLoaded extends WeatherState {
   final Weather weather;
 
-  WeatherLoaded(this.weather);
+  WeatherLoaded(this.weather );
 }
 
 class WeatherError extends WeatherState {

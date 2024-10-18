@@ -12,7 +12,7 @@ class WeatherModel extends Weather {
     currentTemperatureC: currentTemperatureC,
     currentCondition: currentCondition,
     currentIconUrl: currentIconUrl,
-    forecast: forecast.map((day) => day.toEntity()).toList(), // Convert the data model to entity
+    forecast: forecast.map((day) => day.toEntity()).toList(),
   );
 
   factory WeatherModel.fromJson(Map<String, dynamic> json) {

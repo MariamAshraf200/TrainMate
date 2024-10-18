@@ -1,6 +1,6 @@
 import 'package:check_weather/features/getWeather/domain/repo.dart';
 
-import 'entit.dart';
+import '../entit.dart';
 
 class GetWeatherUseCase {
   final WeatherRepository repository;
